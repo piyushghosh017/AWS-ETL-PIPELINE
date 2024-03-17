@@ -127,3 +127,17 @@ def lambda_handler(event, context):
 
 ```
 
+## THEN CONVERT YOUR CODE TO ZIP FILE TO UPLOAD IN LAMBDA USING BELOW
+
+```
+pip install --platform manylinux2014_x86_64 --target=<folder_name> --implementation cp --python 3.9 --only-binary=:all: --upgrade <lib1> <lib2>
+```
+EXAMPLE
+```
+pip install --platform manylinux2014_x86_64 --target=lambda_function_code --implementation cp --python==3.9.12 --only-binary=:all: --upgrade pymongo[srv] boto3 requests
+```
+![ETL_4](https://github.com/piyushghosh017/AWS-ETL-PIPELINE/assets/75368732/f0c65dc1-e7f0-4abd-ac2f-8f760180ab5c)
+
+
+## CREATE A MONGODB ATLAS CLUSTER AND CONNECT TO  MONGODB COMPASS USING URL.
+
